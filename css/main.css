@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+}
+
+.board td {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  transition: 0.5s;
+}
+/* 
+.board td:hover {
+  background-color: lightsalmon;
+} */
+
+.marked {
+  background-color: pink;
+}
+
+.hidden{
+  background-color: rgb(85, 85, 85);
+}
+.hidden span{
+display: none;
+}
+
