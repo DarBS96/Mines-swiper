@@ -11,17 +11,18 @@
 </head>
 
 <body onload="init()">
-    <h1>Let's play</h1>
-    <button onclick="restart(this)">restart</button>
+    <h1>Mines Swiper</h1>
     <div class="timer"> </div>
     <div class="shown-count"> </div>
     <div class="marked-count"> </div>
-    <button class="lvl1" onclick="setLevel(4, 2)">Easy</button>
-      <button class="lvl2" onclick="setLevel(8, 12)">Medium</button>
-      <button class="lvl3" onclick="setLevel(12, 30)">Hard</button>
-    <table border="1" cellpadding="10">
+    <button class="lvl1" onclick="setLevel(this)" ondblclick="lifeLeft()">Easy</button>
+      <button class="lvl2" onclick="setLevel(this)" ondblclick="lifeLeft()">Medium</button>
+      <button class="lvl3" onclick="setLevel(this)" ondblclick="lifeLeft()">Hard</button>
+      <div class="life"></div>
+    <table>
         <tbody class="board"></tbody>
     </table>
+    <!-- <audio class="audio-lost" src="gameover.mp4"></audio> -->
     <script src="js/util.js"></script>
     <script src="js/game.js"></script>
 </body>

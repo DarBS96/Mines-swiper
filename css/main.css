@@ -2,25 +2,102 @@
   box-sizing: border-box;
 }
 
+body {
+  margin: 0;
+  display: fixed;
+  background-color: #333;
+  text-align: center;
+  flex-direction: column;
+}
+
+h1 {
+  color: white;
+  font-family: cursive;
+}
+
+.lvl1{
+ font-size: 14px;
+  margin-right: 20px;
+  background-color: rgba(236, 234, 234, 0.822);
+  border: solid 3px rgba(68, 66, 66, 0.835);
+  border-radius: 5px;
+  cursor: pointer; 
+}
+.lvl2{
+  font-size: 14px;
+  margin-right: 20px;
+  background-color: rgba(185, 176, 187, 0.63);
+  border: solid 3px rgba(68, 66, 66, 0.835);
+  border-radius: 5px;
+  cursor: pointer; 
+}
+
+.lvl3{
+  font-size: 14px;
+  background-color: rgba(138, 126, 141, 0.335);
+  border: solid 3px rgba(68, 66, 66, 0.835);
+  border-radius: 5px;
+  cursor: pointer; 
+}
+
 .board td {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   text-align: center;
   transition: 0.5s;
+  box-shadow: 5px 5px 10px 1px #000;
 }
-/* 
-.board td:hover {
-  background-color: lightsalmon;
-} */
+
+table {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
 
 .marked {
-  background-color: pink;
+  background-color: rgb(212, 193, 196);
+
 }
 
-.hidden{
+.hidden {
   background-color: rgb(85, 85, 85);
 }
-.hidden span{
-display: none;
+.hidden span {
+  display: none;
+  font-size: large;
 }
 
+.timer {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: white;
+  font-family: cursive;
+}
+
+.shown-count {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: white;
+  font-family: cursive;
+}
+
+.marked-count {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: white;
+  font-family: cursive;
+}
+
+button{
+  margin-bottom: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: wheat;
+  cursor: pointer;
+
+}
+
+/* .life {
+  height: 100px;
+  width: 100px;
+} */
